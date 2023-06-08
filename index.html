@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM</title>
+</head>
+<link rel="stylesheet" href="gym_style.css">
+<style>
+    body{
+        margin: 0px;
+        color: aliceblue;
+        padding: 0px;
+        background:url('p.jpg'),linear-gradient(129deg,rgb(236 24 49 / 85%),rgb(0 92 167 / 85%)) 50% 50% no-repeat;;
+        /* background-position: 500px; */
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+    .left{
+        position: absolute;
+        left: 60px;
+        top: 20px;
+        /* border: 2px solid red; */
+        display: inline-block;
+    }
+    .left img{
+        /* position: absolute; */
+        left: 1px; 
+        width: 69px; 
+        padding: 8px;
+        margin-top: -14px;
+    }
+    .left div{
+        margin: -4px;
+        text-align: center;
+        line-height: 20px;
+        font-size: 21px;
+        color: #ccffe7;
+    }
+    .mid{
+        display: block;
+        top:20px;
+        width: 55%;
+        margin: 20px auto;
+        /* border: 2px solid red; */
+        
+    }
+    .right{
+        position: absolute;
+        right: 14px;
+        top: 20px;
+        /* border: 2px solid red; */
+        display: inline-block;
+    }
+    .navbar{
+        margin: -100px;
+        display: inline-block;
+        width: 532px;
+    }
+    .navbar li{
+        display:inline-block;
+        /* padding: 23px 23px; */
+    }
+    .navbar li a{
+        color: #cfffef;
+        text-decoration: none;
+        padding: 16px 17px;
+        font-size: 19px;
+    }
+    .navbar li a:hover,.navbar li a.active{
+        color: grey;
+        text-decoration: underline;
+    }
+    .btn{ 
+        /* display:inline-block; */
+        margin:0px 9px;
+        background-color: black;
+        color: #cfffef;
+        padding: 4px -4px;
+        border:2px solid grey;
+        border-radius: 5px;
+        font-size: 17px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: #2e2b1f;
+    }
+    .container{
+        border:2px solid #525252;
+        margin: 87px 75px;
+        padding: 75px;
+        width: 33%;
+        border-radius: 20px;
+    }
+    .container form{
+        margin: -17px;
+    }
+    .form-group input{
+        text-align: center;
+        display: block;
+        width: 264px;
+        padding: 6px;
+        border: 2px solid #e4fff3;
+        margin: 6px auto;
+        font-size: 15px;
+        border-radius: 8px;
+        background-color: #e2fdff;
+    }
+    .container h1{
+        text-align: center;
+        color: #dbffee;
+    }
+    .container button{
+        display: block;
+        width: 23%;
+        border-color: 0;
+        margin: auto;
+        
+        /* width: 35%; */
+        background-color: black;
+    }
+    .container button div{
+        color: #d6fdff;
+    }
+</style>
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="360_F_294534732_Ialp3Tclqp62jKrxEA4yVlZHzA6Xwaz4.jpg" alt="">
+            <div>BIT GYM</div>
+        </div>
+        <!-- Mid box for Navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness Calculaor</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <!-- Right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the Gym</h1>
+        <form action="#">
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Mobile Number">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Email id">
+            </div>
+            <button>
+            <div class="btn" >Submit</div>
+        </form></div>
+    
+</body>
+</html>
